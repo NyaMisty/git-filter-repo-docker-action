@@ -27,6 +27,7 @@ jobs:
         targetOrg: wikimedia
         targetRepo: wikibase-changes
         targetBranch: main
+        forcePush: false
         filterArguments: >-
           --path=lib/includes/changes/
           --path=lib/includes/Changes/

@@ -24,5 +24,6 @@ runs:
     TARGET_ORG: ${{ inputs.targetOrg }}
     TARGET_REPO: ${{ inputs.targetRepo }}
     TARGET_BRANCH: ${{ inputs.targetBranch }}
+    FORCE_PUSH: ${{ inputs.forcePush }}
   args:
     - ${{ inputs.filterArguments }}
