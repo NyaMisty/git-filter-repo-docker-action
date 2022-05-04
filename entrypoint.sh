@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# Fix https://github.com/actions/checkout/issues/760
+git config --global --add safe.directory /github/workspace
+
 # Set up ssh known hosts and agent
 ssh-keyscan -t rsa github.com >> /etc/ssh/ssh_known_hosts
 eval `ssh-agent -s`
